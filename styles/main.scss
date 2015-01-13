@@ -1,0 +1,7 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+article {
+  @include outer-container;
+  $visual-grid: true;
+}
