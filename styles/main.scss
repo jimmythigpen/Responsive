@@ -1,7 +1,64 @@
 @import 'bourbon/bourbon';
+// $visual-grid: true;
+$gutter: em(50px);
 @import 'neat/neat';
+$tablet: new-breakpoint(max-width 840px);
+$phone: new-breakpoint(max-width 500px);
 
-article {
+body {
+  padding: 4%;
+  color: #47a3da;
+
+}
+.boxes-container {
   @include outer-container;
-  $visual-grid: true;
+
+}
+.single-box-container {
+  @include span-columns(4);
+  height: 350px;
+
+  @include media($tablet) {
+    @include span-columns(12);
+
+  }
+  @include media($phone) {
+    @include span-columns(12);
+  }
+
+}
+.image img {
+  max-width: 100%;
+  max-height: 100%;
+
+}
+.image {
+  @include media($tablet) {
+    @include span-columns(6);
+  }
+  @include media($phone) {
+    @include span-columns(12);
+    text-align: center;
+  }
+
+}
+h2 {
+  font-size: 1em;
+  font-family: Helvetica;
+  @include media($tablet) {
+    margin-top: 0;
+  }
+  @include media($phone) {
+    margin-top: 13.280px;
+  }
+
+}
+.text-container {
+  @include media($tablet) {
+    @include span-columns(6)
+  }
+  @include media($phone) {
+    @include span-columns(12);
+    text-align: center;
+  }
 }

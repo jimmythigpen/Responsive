@@ -8,13 +8,92 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
-article {
+body {
+  padding: 4%;
+  color: #47a3da; }
+
+.boxes-container {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  article::after {
+  .boxes-container::after {
     clear: both;
     content: "";
     display: table; }
+
+.single-box-container {
+  float: left;
+  display: block;
+  margin-right: 3.66764%;
+  width: 30.88824%;
+  height: 350px; }
+  .single-box-container:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 840px) {
+    .single-box-container {
+      float: left;
+      display: block;
+      margin-right: 3.66764%;
+      width: 100%; }
+      .single-box-container:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 500px) {
+    .single-box-container {
+      float: left;
+      display: block;
+      margin-right: 3.66764%;
+      width: 100%; }
+      .single-box-container:last-child {
+        margin-right: 0; } }
+
+.image img {
+  max-width: 100%;
+  max-height: 100%; }
+
+@media screen and (max-width: 840px) {
+  .image {
+    float: left;
+    display: block;
+    margin-right: 3.66764%;
+    width: 48.16618%; }
+    .image:last-child {
+      margin-right: 0; } }
+@media screen and (max-width: 500px) {
+  .image {
+    float: left;
+    display: block;
+    margin-right: 3.66764%;
+    width: 100%;
+    text-align: center; }
+    .image:last-child {
+      margin-right: 0; } }
+
+h2 {
+  font-size: 1em;
+  font-family: Helvetica; }
+  @media screen and (max-width: 840px) {
+    h2 {
+      margin-top: 0; } }
+  @media screen and (max-width: 500px) {
+    h2 {
+      margin-top: 13.280px; } }
+
+@media screen and (max-width: 840px) {
+  .text-container {
+    float: left;
+    display: block;
+    margin-right: 3.66764%;
+    width: 48.16618%; }
+    .text-container:last-child {
+      margin-right: 0; } }
+@media screen and (max-width: 500px) {
+  .text-container {
+    float: left;
+    display: block;
+    margin-right: 3.66764%;
+    width: 100%;
+    text-align: center; }
+    .text-container:last-child {
+      margin-right: 0; } }
 
 /*# sourceMappingURL=main.css.map */
