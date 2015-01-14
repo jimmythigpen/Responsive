@@ -10,10 +10,12 @@ body {
   color: #47a3da;
 
 }
+
 .boxes-container {
   @include outer-container;
 
 }
+
 .single-box-container {
   @include span-columns(4);
   height: 350px;
@@ -22,41 +24,51 @@ body {
     @include span-columns(12);
 
   }
+
   @include media($phone) {
     @include span-columns(12);
   }
 
 }
-.image img {
-  max-width: 100%;
-  max-height: 100%;
 
-}
 .image {
+
   @include media($tablet) {
     @include span-columns(6);
   }
+
   @include media($phone) {
     @include span-columns(12);
     text-align: center;
+
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
   }
 
 }
+
 h2 {
-  font-size: 1em;
   font-family: Helvetica;
+  font-size: 1em;
+
   @include media($tablet) {
     margin-top: 0;
   }
+
   @include media($phone) {
-    margin-top: 13.280px;
+    margin-top: 13.28px;
   }
 
 }
+
 .text-container {
   @include media($tablet) {
     @include span-columns(6)
   }
+
   @include media($phone) {
     @include span-columns(12);
     text-align: center;
